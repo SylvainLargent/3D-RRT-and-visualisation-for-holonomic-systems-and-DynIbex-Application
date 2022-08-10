@@ -2,9 +2,9 @@
 
 Basic RRT and RRT* alogrithms for 3D space and holonomic systems
 
-Visualisation with Matplot3D, plot_trajectory.py (Lots of options with the booleans)
+Visualisation with Matplot3D, plot_trajectory.py (Lots of options with the booleans) (NEEDS PYTHON3.8)
 
-An articly accompanying the code is available in the Paper repository
+A scientific article accompanying the code is available in the Paper repository
 
 The files "main.cpp" are the "created" files !
 
