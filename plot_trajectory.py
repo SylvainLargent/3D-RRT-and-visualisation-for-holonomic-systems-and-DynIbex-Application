@@ -16,9 +16,9 @@ fig, ax = plt.subplots(subplot_kw={'projection': '3d'})
 import os
 
 def main():
-    trajectory_b  = False
-    plot_dynibex = False
-    plot_actual_position = False
+    trajectory_b  = False                 #Plot the trajectory found by the path planning ?
+    plot_dynibex = False                  #Post treatment data for dynibex visualisation
+    plot_actual_position = False          #Plot the trajectory measured
     plot_position_animation = False
     plot_start_end = True
 
