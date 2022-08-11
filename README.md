@@ -15,8 +15,7 @@ WARNING ! PLEASE CHANGE ALL THE PATHS FOR THE PLOTS AND CSV FILES WRITING SO IT 
 WARNING ! If you want to use the files using DynIbex, it is required to have DynIbex installed   
 Check if the function export3d_yn exists in ibex_simulation.h of the library, if else please add the following code in ibex_simulation.h:  
 
-	/**export in a file for ploting*/  
-/**  
+/**export in a file for ploting*/   
 void export3d_yn(const char* filename, int x, int y, int z)  
 {  
 	assert(nb_var > 2);  
@@ -34,7 +33,7 @@ void export3d_yn(const char* filename, int x, int y, int z)
 		file.close();  
 	}    
 };    
-*/
+
 
 When installing DynIbex, move all the library in a binary form inside the repo /BIN
 	./waf configure --without-lp --prefix=../BIN
