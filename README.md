@@ -30,7 +30,6 @@ void export3d_yn(const char* filename, int x, int y, int z)
 			" ; " << iterator_list->box_jnh->operator[](y) <<  
 			" ; " << iterator_list->box_jnh->operator[](z) << std::endl;  
 		}  
-
 		file.close();  
 	}    
 };  
