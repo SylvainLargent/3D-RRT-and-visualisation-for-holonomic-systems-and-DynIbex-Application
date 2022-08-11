@@ -34,7 +34,7 @@ void export3d_yn(const char* filename, int x, int y, int z)
 		file.close();  
 	}    
 };    
-**/
+*/
 
 When installing DynIbex, move all the library in a binary form inside the repo /BIN
 	./waf configure --without-lp --prefix=../BIN
