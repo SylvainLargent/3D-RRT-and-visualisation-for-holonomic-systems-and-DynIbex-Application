@@ -10,6 +10,8 @@ The files "main.cpp" are the "created" files !
 
 And there is another file for the post treatment by Dynibex.
 
+WARNING ! PLEASE CHANGE ALL THE PATHS FOR THE PLOTS AND CSV FILES WRITING SO IT FITS YOUR COMPUTER PATHS
+
 WARNING ! If you want to use the files using DynIbex, it is required to have DynIbex installed 
 
 When installing DynIbex, move all the library in a binary form inside the repo /BIN
