@@ -137,12 +137,15 @@ class RRT_STAR{
             double cost_temp = infinity;
             for(int k = 0; k < neighbour_indexes.size(); ++k){
                 if(cost_temp > get_new_cost(vertices[neighbour_indexes[k]], node_new) ){
-                    if(!this->env.is_in_collision( this->vertices[cost_min_index],node_new)){
+                    if(!this->env.is_in_collision( this->vertices[k],node_new)){
                         cost_temp = get_new_cost(vertices[neighbour_indexes[k]], node_new);
-                        cost_min_index = k;
+                        cost_min_index =neighbour_indexes[k];
                         node_new->set_parent(this->vertices[cost_min_index]);
                     }
                 }
+            }
+            if(!this->env.is_in_collision( this->vertices[cost_min_index],node_new)){
+                node_new->set_parent(this->vertices[cost_min_index]);
             }
         }
 
@@ -230,7 +233,7 @@ class RRT_STAR{
             int n = this->vertices.size() + 1;
             double r;
             if(this->search_radius*(log(n)/n)> this->step_len){
-                r = step_len;
+                r = search_radius;
             } 
             else{
                 r = this->search_radius*(log(n)/n);
